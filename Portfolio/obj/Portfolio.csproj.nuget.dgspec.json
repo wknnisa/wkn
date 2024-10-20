@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\wkn\\Portfolio\\Portfolio.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Portfolio.csproj": {}
   },
   "projects": {
-    "C:\\wkn\\Portfolio\\Portfolio.csproj": {
+    "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Portfolio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\wkn\\Portfolio\\Portfolio.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Portfolio.csproj",
         "projectName": "Portfolio",
-        "projectPath": "C:\\wkn\\Portfolio\\Portfolio.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Portfolio.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\wkn\\Portfolio\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26,8 +26,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -43,8 +43,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

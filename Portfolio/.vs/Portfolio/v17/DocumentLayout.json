@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\wkn\\Portfolio\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|c:\\wkn\\portfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|c:\\users\\hp\\source\\repos\\wkn\\portfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|c:\\users\\hp\\source\\repos\\wkn\\portfolio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|c:\\wkn\\portfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|c:\\users\\hp\\source\\repos\\wkn\\portfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|c:\\wkn\\portfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57AC41C0-0832-497E-8085-751FE4B6FED9}|Portfolio.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +22,33 @@
       "DocumentGroups": [
         {
           "DockedHeight": 321,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\wkn\\Portfolio\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\wkn\\Portfolio\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAowGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-17T13:11:06.107Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\wkn\\Portfolio\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\wkn\\Portfolio\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH0AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAuwHEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-17T13:10:04.057Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -77,15 +76,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\wkn\\Portfolio\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\wkn\\Portfolio\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\wkn\\Portfolio\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:47:46.006Z"
+              "WhenOpened": "2024-10-16T12:47:46.006Z",
+              "EditorCaption": ""
             }
           ]
         }

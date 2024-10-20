@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
+    <style>
+        /* Sticky Navbar */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Make sure the navbar is above other content */
+        }
+
+        /* Active Section Highlighting */
+        .nav-link.active {
+            color: #007bff; /* Bootstrap primary color */
+            font-weight: bold; /* Optional: make active link bold */
+        }
+
+        /* Optional: Smooth Scrolling */
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,14 +37,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    @* <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li> *@
+                    
                 </ul>
             </div>
         </nav>
-
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -33,14 +53,74 @@
         </main>
     </div>
 
-    @* <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Portfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer> *@
+    <footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2024 - portfolio - <a asp-area="" asp-controller="home" asp-action="privacy">privacy</a>
+    </div>
+    </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            var $navLinks = $('.navbar-nav .nav-link');
+            var sections = [];
+
+            // Collect sections
+            $navLinks.each(function () {
+                var target = $(this).attr('href');
+                if (target.startsWith('#')) {
+                    sections.push(target);
+                }
+            });
+
+            function highlightNavLink() {
+                var scrollPos = $(document).scrollTop();
+                var offset = 90; // Adjust this based on your navbar height
+
+                console.log(`Current Scroll Position: ${scrollPos}`);
+
+                // Loop through each section
+                $.each(sections, function (index, section) {
+                    var sectionTop = $(section).offset().top - offset; // Adjust for navbar height
+                    var sectionBottom = sectionTop + $(section).outerHeight();
+
+                    console.log(`Evaluating Section: ${section}`);
+                    console.log(`Section Top: ${sectionTop}, Section Bottom: ${sectionBottom}`);
+
+                    // Check if the current scroll position is within the section bounds
+                    if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                        $navLinks.removeClass('active'); // Remove active class from all links
+                        $('.navbar-nav .nav-link[href="' + section + '"]').addClass('active'); // Add active class to current
+                    }
+
+                    // Add an additional check for the last section
+                    if (index === sections.length - 1 && scrollPos >= sectionBottom) {
+                        $navLinks.removeClass('active');
+                        $('.navbar-nav .nav-link[href="' + section + '"]').addClass('active');
+                    }
+                });
+            }
+
+
+            // Initial highlight call to set the active link on page load
+            highlightNavLink();
+
+            // Attach the scroll event to trigger the highlight function
+            $(window).on('scroll', function () {
+                highlightNavLink();
+            });
+
+            // Attach resize event to recalculate positions
+            $(window).on('resize', function () {
+                highlightNavLink(); // Call to re-evaluate on resize
+            });
+        });
+    </script>
+
+
 </body>
 </html>
